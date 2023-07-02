@@ -1,0 +1,29 @@
+/* .active-link {
+    color: red;
+} */
+
+
+/* .nav-item .active {
+    border-bottom: 3px solid aqua;
+} */
+
+.nav_link {
+    transition: .4s;
+}
+
+.nav_link .active_link, .nav_link:hover {
+    color: #1cf6ad;
+    position: relative;
+}
+
+.nav_link .active_link::after, .nav_link:hover::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #1cf6ad;
+    border-radius: 50%;
+    /* top: rem; */
+    left: 20px;
+    /* top: 25px; */
+}
