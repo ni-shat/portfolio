@@ -8,6 +8,7 @@ import Particles from "react-particles";
 import SocialContact from '../social-contact/SocialContact';
 import { FaChevronDown, FaDownload } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import FollowMe from '../follow-me/FollowMe';
 
 const Home = () => {
 
@@ -47,7 +48,7 @@ const Home = () => {
                         <p className='mt-6 mr-40'>Hello!
                             I am a full stack developer from Bangladesh specializing in the MERN stack. I provide clean code and have rich experience in building dynamic and responsive web applications.</p>
                     </div>
-                    <div className='w-[100%] mt-10 flex gap-3 justify-start px-3'>
+                    <div className='w-[100%] mt-10 flex gap-3 justify-end px-3'>
                         <div className='hidden shadow-lg shadow-[#B8FDE6] flex items-center px-5 bg-transparent border border-[#B8FDE6]'>
                             <FaDownload />
                             <button className='  uppercase text-sm font-extrabold rounded-ull py-1 ml-3 text-white whitespace-nowrap'><Link>Download Resume</Link></button>
@@ -60,6 +61,7 @@ const Home = () => {
                 </div>
             </div>
             <SocialContact></SocialContact>
+            <FollowMe></FollowMe>
         </div>
     );
 };
