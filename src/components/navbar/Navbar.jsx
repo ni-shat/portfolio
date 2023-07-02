@@ -71,12 +71,28 @@ const Navbar = () => {
 
     return (
         <div className='absolute h-fit top-0  '>
-            <div className='fixed h-screen top-0 left-0 z-10 px-1.5 py-1.5'>
-                <div>
-                    <img className='w-[40%]' src={logo} alt="" />
+            <div className='fixed flex justify-around w-full top-0 left-0 z-10 px-1.5 py-1.5'>
+                <div className='flex-grow'>
+                    <img className='w-[20%]' src={logo} alt="" />
+                </div>
+                <div className=" hidden lg:flex lg:flex-row text-sm uppercase  mr-10 font-extrabold">
+                    <ul className=" bg-[#121212] bg-opacity-0  border-emerald-300 px-5 py-7 text-white flex flex-row gap-10  nav_list">
+                        {
+                            navItems.map(item => <li key={item.id} className='nav_item'>
+                                <Link
+                                    className={`nav_link flex items-center gap-1.5 hover:cursor-pointer`} to={item.title}
+                                    smooth={true} offset={0} duration={500} delay={500}
+                                >
+                                    <p>{item.icon}</p>
+                                    <p>{item.title}</p>
+                                </Link>
+                            </li>)
+                        }
+                    </ul>
                 </div>
 
                 <div className="navbar w-fit  bg-transparent text-black font-bold ">
+
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -96,7 +112,7 @@ const Navbar = () => {
                         {/* <a className="btn btn-ghost normal-case text-xl">k</a> */}
                     </div>
 
-                    <div className="mt-40 hidden lg:flex lg:flex-col ">
+                    {/* <div className="mt-40 hidden lg:flex lg:flex-col ">
                         <ul className=" bg-[#121212] ml- rounded-fll  border-emerald-300 px-5 py-7 text-white absolute transform  -translate-y-1/2 left-0 top-1/2  flex flex-col gap-8  nav_list">
                             {
                                 navItems.map(item => <li key={item.id} className='nav_item rotate-80'>
@@ -105,15 +121,21 @@ const Navbar = () => {
                                         smooth={true} offset={0} duration={500} delay={500}
                                     >
                                         <p>{item.icon}</p>
-                                        {/* <p>{item.title}</p> */}
+                                        <p>{item.title}</p>
                                     </Link>
                                 </li>)
                             }
                         </ul>
+                    </div> */}
+
+
+
+
+
+
+                    <div className="navbar-end text-black">
+                       <button className='border-2 bg-[#B8FDE6] text- uppercase text-sm font-extrabold rounded-ull border-emerald-500 px-7 py-1.5 whitespace-nowrap'><Link>Hire me</Link></button>
                     </div>
-                    {/* <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div> */}
                 </div>
             </div>
 
