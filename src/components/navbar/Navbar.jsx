@@ -3,6 +3,8 @@ import logo from '../../assets/logo.png';
 import { FaHome, FaMailBulk, FaRegFileCode, FaRegListAlt, FaRegUser } from 'react-icons/fa';
 import './Navbar.css';
 import { useEffect, useState } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
 
@@ -36,57 +38,38 @@ const Navbar = () => {
         },
     ]
 
-    const [activeLink, setActiveLink] = useState('');
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
 
     useEffect(() => {
-        const handleScroll = () => {
-            const sections = document.querySelectorAll('[data-scroll]');
-            let currentSectionId = '';
-
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                const scrollPosition = window.pageYOffset;
-
-                if (
-                    scrollPosition >= sectionTop - 50 &&
-                    scrollPosition < sectionTop + sectionHeight - 50
-                ) {
-                    currentSectionId = section.getAttribute('id');
-                }
-            });
-
-            setActiveLink(currentSectionId);
-        };
-
-        Events.scrollEvent.register('scroll', handleScroll);
-        scrollSpy.update();
-
-        return () => {
-            Events.scrollEvent.remove('scroll');
-        };
-    }, []);
-
+        AOS.init();
+        AOS.refresh();
+      }, []);
 
 
     return (
-        <div className='absolute h-fit top-0  '>
-            <div className='fixed flex justify-around w-full top-0 left-0 z-10 px-1.5 py-1.5'>
+        <div  className='absolute h-fit top-0  '>
+            <div data-aos="" className='fixed flex justify-around w-full top-0 left-0 z-10 px-1.5 py-1.5'>
                 <div className='flex-grow'>
                     <img className='w-[20%]' src={logo} alt="" />
                 </div>
-                <div className=" hidden lg:flex lg:flex-row text-xs uppercase  mr-10 font-extrabold">
+                <div 
+                className={`${click ? "nav-menu active" : "nav-menu"} hidden lg:flex lg:flex-row text-xs uppercase  mr-10 font-extrabold`}>
                     <ul className=" bg-[#121212] bg-opacity-0  border-emerald-300 px-5 py-7 text-white flex flex-row gap-10  nav_list">
                         {
-                            navItems.map(item => <li key={item.id} className='nav_item'>
-                                <Link
-                                    className={`nav_link flex items-center gap-1.5 hover:cursor-pointer`} to={item.title}
-                                    smooth={true} offset={0} duration={500} delay={500}
-                                >
-                                    <p>{item.icon}</p>
-                                    <p>{item.title}</p>
-                                </Link>
-                            </li>)
+                            navItems.map(item =>
+                                <li key={item.id} className='nav_item'>
+                                    <Link
+                                        activeClass="active" onClick={closeMenu}
+                                        className={`nav_link flex items-center gap-1.5 hover:cursor-pointer`} to={item.title}
+                                        smooth={true} offset={0} duration={500} delay={500}
+                                    >
+                                        <p>{item.icon}</p>
+                                        <p>{item.title}</p>
+                                    </Link>
+                                </li>)
                         }
                     </ul>
                 </div>
@@ -100,7 +83,7 @@ const Navbar = () => {
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 {
-                                    navItems.map(item => <li key={item.id}>
+                                    navItems.map(item => <li key={item.id} className='nav_item'>
                                         <Link activeClass="active" to={item.title} smooth={true} offset={0} duration={500} delay={500}>
                                             <span>{item.icon}</span>
                                             <span>{item.title}</span>

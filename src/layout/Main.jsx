@@ -6,17 +6,20 @@ import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
 import Contact from "../components/contacts/Contact";
 import '../index.css';
+import Footer from "../components/footer/Footer";
+import Home from "../components/home/Home";
 
 
 const Main = () => {
     return (
-        <div className="pop">
+        <div className="pop bg-[#121212]">
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <Home></Home>
             <About></About>
             <Skills></Skills>
             <Projects></Projects>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

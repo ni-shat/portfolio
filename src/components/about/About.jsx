@@ -31,8 +31,8 @@ const About = () => {
                             <p className='flex'><p className='w-[88px] text-emerald-400 font-bold'>Email:</p> <p className='w-20 '>nishat.tabassum301@gmail.com</p></p>
                         </div>
                         <div className='flex gap-32 whitespace-nowrap'>
-                            <p className='flex'><p className='w-[88px] text-emerald-400 font-bold'>Github:</p> <p className='w-20 '>github</p></p>
-                            <p className='flex'><p className='w-[88px] text-emerald-400 font-bold'>Linkedin:</p> <p className='w-20 '>Slinkedin</p></p>
+                            <p className='flex'><p className='w-[88px] text-emerald-400 font-bold'>Github:</p> <p className='w-20 '>https://github.com/ni-shat</p></p>
+                            <p className='flex'><p className='w-[88px] text-emerald-400 font-bold'>Linkedin:</p> <p className='w-20 '>https://www.linkedin.com/in/nishat1/</p></p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const About = () => {
             <div className='flex gap-4 items-center justify-start mx-20 mt-4'>
                 <div className='w-fit h-fit shadow-[#B8FDE6] flex items-center px-5 bg-[#B8FDE6] border border-[#B8FDE6]  hover:cursor-pointer hover:bg-[#a8a9ab] transition-all duration-200'>
                     <FaDownload className='text-black' />
-                    <button className=' uppercase text-sm font-extrabold rounded-ull py-2 ml-3 text-black whitespace-nowrap'><Link to=''>Download Resume</Link></button>
+                    <button className=' uppercase text-sm font-extrabold rounded-ull py-2 ml-3 text-black whitespace-nowrap'><a href="/resume.png" download='resume'>Download Resume</a></button>
                 </div>
                 {/* <div className='w-32 h-32 border -z-10 bg-slate-100 rounded-full flex items-center justify-center'> */}
                     {/* <ReactCurvedText

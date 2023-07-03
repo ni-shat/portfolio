@@ -3,15 +3,16 @@
 } */
 
 
-/* .nav-item .active {
+ .nav-item .active {
     border-bottom: 3px solid aqua;
-} */
+} 
+
 
 .nav_link {
     transition: .4s;
 }
 
-.nav_link .active_link, .nav_link:hover {
+.nav_link .active_link, .nav_link:hover, .nav_link:active {
     color: #1cf6ad;
     position: relative;
 }
@@ -23,7 +24,6 @@
     height: 6px;
     background-color: #1cf6ad;
     border-radius: 50%;
-    /* top: rem; */
-    left: 20px;
-    /* top: 25px; */
+    left: 25px;
+    top: 20px;
 }

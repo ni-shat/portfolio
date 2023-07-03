@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import me1 from '../../assets/me1.jpg';
 import me from '../../assets/me.png';
 import logo from '../../assets/logo.png';
@@ -10,8 +10,9 @@ import { FaChevronDown, FaDownload } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import FollowMe from '../follow-me/FollowMe';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-
 import '../../index.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Home = () => {
@@ -23,11 +24,16 @@ const Home = () => {
         // deleteSpeed: 80,
     })
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
 
     return (
         <div data-scroll id='Home' className='relative '>
             <div className='w-full flex h-screen'>
-                <div className='w-1/3 bg-[#a8a9ab]'>
+                <div  data-aos="fade-right" className='w-1/3 bg-[#a8a9ab]'>
 
                 </div>
                 <div className='bg-[#121212] w-3/4'>
@@ -35,13 +41,13 @@ const Home = () => {
                 </div>
             </div>
             <div className='py-0'>
-                <div className=' '>
+                <div  className=' '>
                     <img className='w-[440px] h-[500px] object-cover absolute top-[50.38%] left-1/3 transform -translate-x-1/2 -translate-y-1/2' src={me1} alt="" />
                 </div>
                 <div className='absolute top-[20%] left-1/2 text-white'>
                     {/* <p className='leading-10 text-3xl font-medium'>Hello, I'm</p> */}
                     <div className='bg-[#121212] relative -left-24 py-14 px-12 rounded-full'>
-                        <h3 className='text-5xl font-extrabold pop'><p>Nishat</p><p>Tabassum</p></h3>
+                        <h3  data-aos="fade-up" className='text-5xl font-extrabold pop'><p>Nishat</p><p>Tabassum</p></h3>
                     </div>
                     <div className='ml-3'>
                         <h2 className='text-emerald-500 font-bold text-xl uppercase mt-3 pop'><span className='text-white'> </span>
