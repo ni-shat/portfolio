@@ -75,7 +75,7 @@ const Navbar = () => {
                 <div className='flex-grow'>
                     <img className='w-[20%]' src={logo} alt="" />
                 </div>
-                <div className=" hidden lg:flex lg:flex-row text-sm uppercase  mr-10 font-extrabold">
+                <div className=" hidden lg:flex lg:flex-row text-xs uppercase  mr-10 font-extrabold">
                     <ul className=" bg-[#121212] bg-opacity-0  border-emerald-300 px-5 py-7 text-white flex flex-row gap-10  nav_list">
                         {
                             navItems.map(item => <li key={item.id} className='nav_item'>
@@ -100,8 +100,8 @@ const Navbar = () => {
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 {
-                                    navItems.map(item => <li key={item.id} >
-                                        <Link activeClass="active" to={item.title} smooth={true} offset={0} duration={500} delay={1000}>
+                                    navItems.map(item => <li key={item.id}>
+                                        <Link activeClass="active" to={item.title} smooth={true} offset={0} duration={500} delay={500}>
                                             <span>{item.icon}</span>
                                             <span>{item.title}</span>
                                         </Link>
@@ -134,7 +134,12 @@ const Navbar = () => {
 
 
                     <div className="navbar-end text-black">
-                       <button className='border-2 bg-[#B8FDE6] text- uppercase text-sm font-extrabold rounded-ull border-emerald-500 px-7 py-1.5 whitespace-nowrap'><Link>Hire me</Link></button>
+                        <Link
+                            className='border-2 bg-[#B8FDE6] text- uppercase text-xs font-extrabold rounded-ull border-emerald-500 px-7 py-2.5 whitespace-nowrap hover:cursor-pointer hover:bg-[#a8a9ab] transition-all duration-200'
+
+                            activeClass="active" to='Contact' smooth={true} offset={0} duration={500} delay={500}>
+                            Hire me
+                        </Link>
                     </div>
                 </div>
             </div>

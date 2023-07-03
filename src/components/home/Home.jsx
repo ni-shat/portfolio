@@ -9,20 +9,20 @@ import SocialContact from '../social-contact/SocialContact';
 import { FaChevronDown, FaDownload } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import FollowMe from '../follow-me/FollowMe';
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
+
+import '../../index.css';
+
 
 const Home = () => {
 
-    // const particlesInit = useCallback(async engine => {
-    //     console.log(engine);
-    //     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    //     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    //     // starting from v2 you can add only the features you need reducing the bundle size
-    //     await loadFull(engine);
-    // }, []);
+    const [text] = useTypewriter({
+        words: ['Front-End Developer', 'Back-End Developer', 'Mern-Stack Developer'],
+        loop: {},
+        typeSpeed: 20,
+        // deleteSpeed: 80,
+    })
 
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
-    }, []);
 
     return (
         <div data-scroll id='Home' className='relative '>
@@ -41,11 +41,17 @@ const Home = () => {
                 <div className='absolute top-[20%] left-1/2 text-white'>
                     {/* <p className='leading-10 text-3xl font-medium'>Hello, I'm</p> */}
                     <div className='bg-[#121212] relative -left-24 py-14 px-12 rounded-full'>
-                        <h3 className='text-4xl   font-extrabold space-y-'><p>Nishat</p><p>Tabassum</p></h3>
+                        <h3 className='text-5xl font-extrabold pop'><p>Nishat</p><p>Tabassum</p></h3>
                     </div>
                     <div className='ml-3'>
-                        <h2 className='text-emerald-500 font-bold text-3xl mt-3'><span className='text-white'>I'm a</span> Mern Stack Developer</h2>
-                        <p className='mt-6 mr-40'>Hello!
+                        <h2 className='text-emerald-500 font-bold text-xl uppercase mt-3 pop'><span className='text-white'> </span>
+                            {/* Mern Stack Developer */}
+                            {text}
+                            <span><Cursor/></span>
+                        </h2>
+
+
+                        <p className='mt-6 mr-40 pop text-sm leading-6'>Hello!
                             I am a full stack developer from Bangladesh specializing in the MERN stack. I provide clean code and have rich experience in building dynamic and responsive web applications.</p>
                     </div>
                     <div className='w-[100%] mt-10 flex gap-3 justify-end px-3'>
@@ -54,9 +60,9 @@ const Home = () => {
                             <button className='  uppercase text-sm font-extrabold rounded-ull py-1 ml-3 text-white whitespace-nowrap'><Link>Download Resume</Link></button>
                         </div>
 
-                        <div className='w-fit  mr-[182px] ml-3 border p-4  rounded-full'>
+                        <Link to='About' smooth={true} offset={0} duration={500} delay={500} className='w-fit hover:cursor-pointer hover:bg-transparent hover:text-[#B8FDE6] transition-all duration-200 shadow-md shadow-[#B8FDE6] mr-[182px] ml-3 border p-4  rounded-full'>
                             <FaChevronDown className='text-xl animate-bounce ' />
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

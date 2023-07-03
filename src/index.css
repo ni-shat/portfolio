@@ -3,6 +3,28 @@
 @tailwind utilities;
 
 
+.pop {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bold-3 {
+  font-weight: 300px;
+}
+.bold-4 {
+  font-weight: 400px;
+}
+.bold-5 {
+  font-weight: 500px;
+}
+.bold-6 {
+  font-weight: 600px;
+}
+
+
+
+
+
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
