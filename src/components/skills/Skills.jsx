@@ -17,7 +17,7 @@ import mongodb from '../../assets/mongodb.png';
 
 const Skills = () => {
     return (
-        <div data-scroll id='Skills' className='h-auto pb-20 w-full bg-[#121212] text-center text-emerald-400 font-semibold pt-14'>
+        <div data-scroll id='Skills' className='h-auto border pb-20 w-full bg-[#121212] text-center text-emerald-400 font-semibold pt-14'>
             <div className='bg-[#121212] relative py-10 px-12 justify-center gap-4 flex'>
                 <h3 className='text-5xl font-extrabold pop text-white uppercase'>Skills</h3>
                 <img className='mt-1 border-t-0 border-zinc-400' src={icon} alt="" />

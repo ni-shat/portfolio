@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "project_title": "Toy MarketPlace Website",
+      "description": "This MERN stack based website provides a delightful online shopping experience, offering a vast selection of animal toys for children.",
+      "live_site": "https://toy-marketplace-auth-34634.web.app/",
+      "client_site": "https://github.com/ni-shat/toy-marketplace-project",
+      "server_site": "https://github.com/ni-shat/toy-marketplace--server",
+      "type": "mern",
+      "image": "https://i.ibb.co/SnYRMn5/card1.png"
+    },
+    {
+      "id": 2,
+      "project_title": "Testeva-Food Recipe Website",
+      "description": "Connects talented chefs and food enthusiasts with mouthwatering recipes and personalized cooking experience.",
+      "live_site": "https://chef-recipes-project-f78a5.web.app/",
+      "client_site": "https://github.com/ni-shat/food-recipe-project",
+      "server_site": "https://github.com/ni-shat/Testeva-Food-Recipe-Server",
+      "type": "mern",
+      "image": "https://i.ibb.co/vc9BDpB/chef-recipes-project-f78a5-web-app-2.png"
+    },
+    {
+      "id": 3,
+      "project_title": "Music School Website",
+      "description": "The Music School Website is a MERN stack based project that offers a wide range of music classes for aspiring musicians.",
+      "live_site": "https://dance-school-auth.web.app/",
+      "client_site": "https://github.com/ni-shat/music-school-project",
+      "server_site": "https://github.com/ni-shat/music-school-server",
+      "type": "mern",
+      "image": "https://i.ibb.co/ckfXJzz/dance-school-auth-web-app.png"
+    }
+
+]
