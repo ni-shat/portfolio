@@ -32,11 +32,10 @@ const Home = () => {
 
 
     return (
-        <div data-scroll id='Home' className='relative '>
+        <div data-scroll id='Home' className='relative -mt-28'>
             <div className='w-full h-auto'>
-                <div data-aos="fade-right" className='w-[30.8%] bg-[#a8a9ab] md:block md:h-screen h-60'>
-                {/* w-[30.8%] */}
-
+                <div data-aos="fade-right" className='w-[30.8%] bg-[#a8a9ab] border-0 md:block md:h-screen h-60 '>
+            
                 </div>
                 {/* <div className='bg-[#121212] w-3/4'>
 
