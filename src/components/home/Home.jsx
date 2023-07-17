@@ -13,6 +13,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import '../../index.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SocialMobie from '../socialMobile/SocialMobie';
 
 
 const Home = () => {
@@ -32,66 +33,87 @@ const Home = () => {
 
     return (
         <div data-scroll id='Home' className='relative '>
-            <div className='w-full flex h-screen'>
-                <div data-aos="fade-right" className='w-1/3 bg-[#a8a9ab] md:block md:h-screen h-60'>
+            <div className='w-full h-auto'>
+                <div data-aos="fade-right" className='w-[30.8%] bg-[#a8a9ab] md:block md:h-screen h-60'>
+                {/* w-[30.8%] */}
 
                 </div>
-                <div className='bg-[#121212] w-3/4'>
+                {/* <div className='bg-[#121212] w-3/4'>
 
-                </div>
+                </div> */}
             </div>
-            <div className='py-0 flex'>
-                {/* image */}
-                <div className='object-cover absolute 
-                    md:w-[440px] md:h-[500px] md:top-[50.38%] md:left-1/3
-
-                    min-[320px]:top-[17%] min-[320px]:left-[30%] min-[320px]:w-[250px] min-[320px]:h-[280px] 
-
+            <div className='py-0 w-full mx-auto'>
+            
+                {/* image  */}
+                <div className='absolute md:w-[75%] 
+                    md:top-[50.8%] md:left-[55.1%]
                     
-                    transform -translate-x-1/2 md:-translate-y-1/2'>
-                    <img className=''
-                        src={me1} alt="" />
+                    min-[320px]:top-[50%] min-[320px]:left-0 min-[320px]:w-full 
+
+                   transform md:-translate-x-1/2 md:-translate-y-1/2'>
+
+                    {/* container div */}
+                    <div className='flex w-full md:flex-row flex-col bg-[#121212] justify-between md:gap-5 gap-5'>
+
+                        <img className='object-cover 
+                                        md:w-[440px] md:h-[505px] 
+                                        min-[320px]:w-[250px] min-[320px]:h-[280px]
+                        '
+                            src={me1} alt="" />
+                        {/* 1st part done */}
+                        <SocialMobie></SocialMobie>
+
+                        {/* 2nd part */}
+                        {/* NEW start side text section */}
+                        <div className='w-full flex items-end'>
+                            {/* OLD started OF MERN PARA SECTION     OLD: min-[400px]:w-[350px]*/}
+                            <div>
+                                <div className='md:ml-0 md:pl-[5px] min-[320px]:pl-2 md:mt-0 mt-0 relative 
+                                    
+                                    md:left-0 md:w-full
+                                    w-[91%] 
+                                    '>
+                                        
+                                    <h2 className='text-emerald-500 font-bold text-xl uppercase  pop whitespace-nowrap'>
+                                        {/* Mern Stack Developer */}
+                                        {text}
+                                        <Cursor />
+                                    </h2>
+
+                                    <p className='mt-3.5 md:mr-12  pop md:text-sm text-base md:leading-6 text-white'>Hello!
+                                        I am a full stack developer from Bangladesh specializing in the MERN stack. I provide clean code and have rich experience in building dynamic and responsive web applications.</p>
+                                    <div className='md:hidden block'>
+                                        <SocialContact></SocialContact>
+                                    </div>
+                                </div>
+
+                                {/* down arrow */}
+                                <div className='md:w-[100%] w-fit md:relative absolute top-44 left-64 md:top-0 md:left-0 md:mt-12 min-[320px]:mt-0 md:pb-4 flex md:justify-end min-[320px]:justify-start px-0'>
+                                    <Link to='About' smooth={true} offset={0} duration={500} delay={500} className='w-fit hover:cursor-pointer hover:bg-transparent hover:text-[#B8FDE6] transition-all duration-200 shadow-md shadow-[#B8FDE6] md:mr-[70px] ml-3 border p-4  rounded-full'>
+                                        <FaChevronDown className='text-xl animate-bounce text-white' />
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* completed the side texts section */}
+                        </div>
+                        {/* NEW SIDE TEXT SECTION COMPLETED */}
+
+                    </div>
+
                 </div>
 
-                <div className='absolute top-[20%] left-1/2 text-white'>
 
+                {/* OLD NISHAT TABASSUM part */}
+                <div className='absolute md:top-[20%] left-1/2 min-[320px]:top-[53%] text-white'>
                     <div className='bg-[#121212] relative md:-left-24 left-3 md:top-0 top-5 md:py-14 py-5 md:px-12 pl-6 w-fit rounded-full'>
                         <h3 data-aos="fade-up" className='md:text-5xl text-2xl font-extrabold pop '><p>Nishat</p><p>Tabassum</p></h3>
                     </div>
-
-                    <div className='md:ml-0 md:pl-3 md:mt-0 mt-44 relative 
-                                    -left-[60%] 
-                                    min-[320px]:-left-[57%]
-                                    min-[380px]:-left-[60%]
-                                    min-[350px]:-left-[60%]
-                                    min-[400px]:-left-[55%]  min-[400px]:w-[350px]
-                                    md:left-0 
-                                    w-[300px] 
-                                    md:w-full'>
-                        <h2 className='text-emerald-500 font-bold text-xl uppercase mt-3 pop whitespace-nowrap'>
-                            {/* Mern Stack Developer */}
-                            {text}
-                            <Cursor />
-                        </h2>
-
-                        <p className='mt-6 md:mr-40 pop text-sm leading-6'>Hello!
-                            I am a full stack developer from Bangladesh specializing in the MERN stack. I provide clean code and have rich experience in building dynamic and responsive web applications.</p>
-                        <div className='md:hidden block'>
-                            <SocialContact></SocialContact>
-                        </div>
-                    </div>
                     
-                    <div className='w-[100%] mt-10 flex gap-3 justify-end px-3'>
-                        <div className='hidden shadow-lg shadow-[#B8FDE6] flex items-center px-5 bg-transparent border border-[#B8FDE6]'>
-                            <FaDownload />
-                            <button className='  uppercase text-sm font-extrabold rounded-ull py-1 ml-3 text-white whitespace-nowrap'><Link>Download Resume</Link></button>
-                        </div>
-
-                        <Link to='About' smooth={true} offset={0} duration={500} delay={500} className='w-fit hover:cursor-pointer hover:bg-transparent hover:text-[#B8FDE6] transition-all duration-200 shadow-md shadow-[#B8FDE6] mr-[182px] ml-3 border p-4  rounded-full'>
-                            <FaChevronDown className='text-xl animate-bounce ' />
-                        </Link>
-                    </div>
                 </div>
+                {/* TODO END OF ABSOLUTE AND OLDER DOWBN ARROW SIDE TEXTS END */}
+
+
             </div>
             <div className='md:block hidden'>
                 <SocialContact></SocialContact>

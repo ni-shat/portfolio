@@ -77,7 +77,7 @@ const Navbar = () => {
             {/* hi */}
             <div className="lg:hidden">
 
-                <ul tabIndex={0} className={` absolute top-[65px] left-0 right-0  flex-row transition-all duration-500 w-[97%] mx-auto flex justify-around z-[1]  py-3 bg-[#121212]  border-[0.5px]  text-black rounded-box   
+                <ul tabIndex={0} className={`  fixed top-[65px] left-0 right-0  flex-row transition-all duration-500 w-[97%] mx-auto flex justify-around z-[1]  py-3 bg-[#121212]  border-[0.5px]  text-black rounded-box   
 `}>
                     {
                         navItems.map(item => <li key={item.id} className='nav_item'>
@@ -98,7 +98,7 @@ const Navbar = () => {
             </div>
             {/* hi */}
             <div className='absolute h-fit top-0  '>
-                <div className='fixed flex justify-around w-full top-0 left-0 z-10 md:px-1.5 pr-1 pl-0.5 py-1.5'>
+                <div className='md:fixed relative flex justify-around w-full top-0 left-0 z-10 md:px-1.5 pr-1 pl-0.5 py-1.5'>
                     <div className='flex-grow'>
                         <img className='md:w-[20%] w-[40%]' src={logo} alt="" />
                     </div>

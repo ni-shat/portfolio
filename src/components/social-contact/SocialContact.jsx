@@ -10,14 +10,14 @@ const SocialContact = () => {
         <div className='md:absolute md:bottom-4 md:top-auto md:left-3
         '>
             <div className='flex gap-3 items-center mb-8'>
-                <div className='h-fit md:mt-16 mt-7 md:bg-opacity-1 bg-opacity-10 md:bg-transparent bg-white md:text-black text-white text-sm uppercase w-fit font-extrabold  md:border-2 border border-black px-2 py-2.5 rounded-ull flex gap-2 items-center shadow-lg shadow-[#B8FDE6]'>
+                <div className='h-fit md:mt-16 mt-5 md:bg-opacity-1 bg-opacity-10 md:bg-transparent bg-white md:text-black text-white text-sm uppercase w-fit font-extrabold  md:border-2 border border-black px-2 py-2.5 rounded-ull flex gap-2 items-center shadow-lg shadow-[#B8FDE6]'>
                     <FaDownload />
                     <a href="/resume-nishat.pdf" target='_blank' download='resume'>Download Resume</a>
                 </div>
                 {/* <div className='  bg-black w-[1px]  h-[200px] mb-0'></div> */}
             </div>
 
-            <div className='flex items-center'>
+            <div className='md:flex items-center hidden '>
                 <div className='md:mt-0 mt-3'>
                     <div className='flex gap-2 items-center'>
                         <div className="divider md:bg-black bg-white w-10 md:w-20 h-[1px] md:block hidden"></div>

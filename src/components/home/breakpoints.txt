@@ -24,3 +24,19 @@ className='object-cover absolute
 
 
                           min-[400px]:top-[17%] min-[400px]:left-[30%]  min-[400px]:w-[250px] min-[400px]:h-[380px]
+
+
+
+
+
+
+
+
+
+                          // now in merntext section
+
+                          -left-[60%] 
+                                    min-[320px]:-left-[57%]
+                                    min-[380px]:-left-[60%]
+                                    min-[350px]:-left-[60%]
+                                    min-[400px]:-left-[55%]  

@@ -15,8 +15,8 @@ const Main = () => {
         <div className="pop bg-[#121212] ">
             <Navbar></Navbar>
             <Home></Home>
-            {/* <About></About>
-            <Skills></Skills>
+            <About></About>
+            {/* <Skills></Skills>
             <Projects></Projects>
             <Contact></Contact>
             <Footer></Footer> */}
