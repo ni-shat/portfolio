@@ -12,14 +12,14 @@ import Home from "../components/home/Home";
 
 const Main = () => {
     return (
-        <div className="pop bg-[#121212]">
+        <div className="pop bg-[#121212] ">
             <Navbar></Navbar>
             <Home></Home>
-            <About></About>
+            {/* <About></About>
             <Skills></Skills>
             <Projects></Projects>
             <Contact></Contact>
-            <Footer></Footer>
+            <Footer></Footer> */}
         </div>
     );
 };

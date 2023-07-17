@@ -16,7 +16,7 @@ const Projects = () => {
 
 
     return (
-        <div data-scroll id='Projects' className='h-auto text-white w-full bg-[#121212] text-center pt-20 pb-20 border'>
+        <div data-scroll id='Projects' className='h-fit text-white w-full bg-[#121212] text-center pt-20 pb-20 border'>
             <div className=' relative py-10 px-12 justify-center gap-4 flex'>
                 <h3 className='text-5xl font-extrabold pop text-white uppercase'>Projects</h3>
                 <img className='mt-1 border-t-0 border-zinc-400' src={icon} alt="" />

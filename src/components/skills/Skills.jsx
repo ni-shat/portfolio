@@ -12,18 +12,27 @@ import bs from '../../assets/bs.svg';
 import express from '../../assets/ex.png';
 import php from '../../assets/php.svg';
 import mongodb from '../../assets/mongodb.png';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 
 const Skills = () => {
+
+    // useEffect(() => {
+    //     AOS.init();
+    //     AOS.refresh();
+    //   }, []);
+
     return (
-        <div data-scroll id='Skills' className='h-auto border pb-20 w-full bg-[#121212] text-center text-emerald-400 font-semibold pt-14'>
+        <div data-scroll id='Skills' className='h-fit transition-all duration-1000  border pb-20 w-full bg-[#121212] text-center text-emerald-400 font-semibold pt-14'>
             <div className='bg-[#121212] relative py-10 px-12 justify-center gap-4 flex'>
                 <h3 className='text-5xl font-extrabold pop text-white uppercase'>Skills</h3>
                 <img className='mt-1 border-t-0 border-zinc-400' src={icon} alt="" />
                 {/* <p>My Technical Skills</p> */}
             </div>
-            <div className='flex gap-16 mb-6 mx-auto justify-center py-3 '>
+            <div data-aos="fade-right" data-aos-duration="1500" className='flex gap-16 mb-6 mx-auto justify-center py-3 '>
                 <div className=''>
                     <div className='border rounded-full p-2  w-[75px] mb-0.5 h-[75px] flex justify-center items-center'>
                         <img className='w-14 h-14 rounded-full' src={html5} alt="" />
@@ -49,7 +58,7 @@ const Skills = () => {
                     <p>Express</p>
                 </div>
             </div>
-            <div className='flex gap-16 mb-6 mx-auto justify-center'>
+            <div data-aos="fade-left" data-aos-duration="1500" className='flex gap-16 mb-6 mx-auto justify-center'>
                 <div>
                     <div className='border rounded-full p-2 w-[75px] mb-0.5 h-[75px]  flex justify-center items-center'>
                         <img className='w-14 h-14 rounded-full' src={mongodb} alt="" />
@@ -75,7 +84,7 @@ const Skills = () => {
                     <p>JavaScript</p>
                 </div>
             </div>
-            <div className='flex gap-16 mb-6 mx-auto justify-center'>
+            <div data-aos="fade-right" data-aos-duration="1500" className='flex gap-16 mb-6 mx-auto justify-center'>
                 <div>
                     <div className='border rounded-full p-2  w-[75px] mb-0.5 h-[75px] flex justify-center items-center'>
                         <img className='w-14 h-14 rounded-full' src={tailwind} alt="" />
@@ -103,7 +112,7 @@ const Skills = () => {
             </div>
 
 
-            <div className='w-fit mx-auto'>
+            <div data-aos="fade-left" data-aos-duration="1500" className='w-fit mx-auto'>
                 <div className=' border rounded-full p-2 w-[75px] mb-0.5 h-[75px]  flex justify-center items-center'>
                     <img className='w-14 h-14 rounded-full' src={php} alt="" />
                 </div>

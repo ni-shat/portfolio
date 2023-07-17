@@ -1,29 +1,37 @@
-/* .active-link {
-    color: red;
-} */
 
-
- .nav-item .active {
-    border-bottom: 3px solid aqua;
-} 
-
-
-.nav_link {
-    transition: .4s;
+.active {
+    color: #1cf6ad;
+    /* Add any additional styles for the active link */
 }
 
-.nav_link .active_link, .nav_link:hover, .nav_link:active {
+
+.nav_link.active, .nav_link:hover, .nav_link:active {
     color: #1cf6ad;
     position: relative;
 }
 
-.nav_link .active_link::after, .nav_link:hover::after {
+.nav_link:hover::after {
     position: absolute;
     content: '';
     width: 6px;
     height: 6px;
     background-color: #1cf6ad;
     border-radius: 50%;
-    left: 25px;
+    animation-delay: 500ms;
+    left: 50%;
     top: 20px;
 }
+
+/* .nav_link.active::after, .nav_link:hover::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #1cf6ad;
+    border-radius: 50%;
+    animation-delay: 500ms;
+    left: 50%;
+    top: 20px;
+} */
+
+

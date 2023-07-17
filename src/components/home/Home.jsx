@@ -27,39 +27,60 @@ const Home = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-      }, []);
+    }, []);
 
 
     return (
         <div data-scroll id='Home' className='relative '>
             <div className='w-full flex h-screen'>
-                <div  data-aos="fade-right" className='w-1/3 bg-[#a8a9ab]'>
+                <div data-aos="fade-right" className='w-1/3 bg-[#a8a9ab] md:block md:h-screen h-60'>
 
                 </div>
                 <div className='bg-[#121212] w-3/4'>
 
                 </div>
             </div>
-            <div className='py-0'>
-                <div  className=' '>
-                    <img className='w-[440px] h-[500px] object-cover absolute top-[50.38%] left-1/3 transform -translate-x-1/2 -translate-y-1/2' src={me1} alt="" />
+            <div className='py-0 flex'>
+                {/* image */}
+                <div className='object-cover absolute 
+                    md:w-[440px] md:h-[500px] md:top-[50.38%] md:left-1/3
+
+                    min-[320px]:top-[17%] min-[320px]:left-[30%] min-[320px]:w-[250px] min-[320px]:h-[280px] 
+
+                    
+                    transform -translate-x-1/2 md:-translate-y-1/2'>
+                    <img className=''
+                        src={me1} alt="" />
                 </div>
+
                 <div className='absolute top-[20%] left-1/2 text-white'>
-                    {/* <p className='leading-10 text-3xl font-medium'>Hello, I'm</p> */}
-                    <div className='bg-[#121212] relative -left-24 py-14 px-12 rounded-full'>
-                        <h3  data-aos="fade-up" className='text-5xl font-extrabold pop'><p>Nishat</p><p>Tabassum</p></h3>
+
+                    <div className='bg-[#121212] relative md:-left-24 left-3 md:top-0 top-5 md:py-14 py-5 md:px-12 pl-6 w-fit rounded-full'>
+                        <h3 data-aos="fade-up" className='md:text-5xl text-2xl font-extrabold pop '><p>Nishat</p><p>Tabassum</p></h3>
                     </div>
-                    <div className='ml-3'>
-                        <h2 className='text-emerald-500 font-bold text-xl uppercase mt-3 pop'><span className='text-white'> </span>
+
+                    <div className='md:ml-0 md:pl-3 md:mt-0 mt-44 relative 
+                                    -left-[60%] 
+                                    min-[320px]:-left-[57%]
+                                    min-[380px]:-left-[60%]
+                                    min-[350px]:-left-[60%]
+                                    min-[400px]:-left-[55%]  min-[400px]:w-[350px]
+                                    md:left-0 
+                                    w-[300px] 
+                                    md:w-full'>
+                        <h2 className='text-emerald-500 font-bold text-xl uppercase mt-3 pop whitespace-nowrap'>
                             {/* Mern Stack Developer */}
                             {text}
-                            <span><Cursor/></span>
+                            <Cursor />
                         </h2>
 
-
-                        <p className='mt-6 mr-40 pop text-sm leading-6'>Hello!
+                        <p className='mt-6 md:mr-40 pop text-sm leading-6'>Hello!
                             I am a full stack developer from Bangladesh specializing in the MERN stack. I provide clean code and have rich experience in building dynamic and responsive web applications.</p>
+                        <div className='md:hidden block'>
+                            <SocialContact></SocialContact>
+                        </div>
                     </div>
+                    
                     <div className='w-[100%] mt-10 flex gap-3 justify-end px-3'>
                         <div className='hidden shadow-lg shadow-[#B8FDE6] flex items-center px-5 bg-transparent border border-[#B8FDE6]'>
                             <FaDownload />
@@ -72,7 +93,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <SocialContact></SocialContact>
+            <div className='md:block hidden'>
+                <SocialContact></SocialContact>
+            </div>
+
             <FollowMe></FollowMe>
         </div>
     );

@@ -29,7 +29,7 @@ const Contact = () => {
 
 
     return (
-        <div data-scroll id='Contact' className='h-screen w-full relative bg-[#121212] z-0 text-white text-start pt-20'>
+        <div data-scroll id='Contact' className='h-screen w-full relative bg-[#121212] z-0 text-white text-start pt-20 border pb-2'>
              <div className='bg-[#121212] relative py-10 px-12 justify-center gap-4 flex'>
                 <h3 className='text-5xl font-extrabold pop text-white uppercase'>Contact Me</h3>
                 <img className='mt-1 border-t-0 border-zinc-400 relative -top-4 left-4 -rotate-90' src={icon} alt="" />

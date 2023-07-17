@@ -7,40 +7,41 @@ import { useState } from 'react';
 
 const SocialContact = () => {
     return (
-        <div className='absolute bottom-4 left-3'>
+        <div className='md:absolute md:bottom-4 md:top-auto md:left-3
+        '>
             <div className='flex gap-3 items-center mb-8'>
-                <div className='h-fit mt-16 text-black text-sm uppercase w-fit font-extrabold  border-2 border-black px-2 py-2.5 rounded-ull flex gap-2 items-center shadow-lg shadow-[#B8FDE6]'>
+                <div className='h-fit md:mt-16 mt-7 md:bg-opacity-1 bg-opacity-10 md:bg-transparent bg-white md:text-black text-white text-sm uppercase w-fit font-extrabold  md:border-2 border border-black px-2 py-2.5 rounded-ull flex gap-2 items-center shadow-lg shadow-[#B8FDE6]'>
                     <FaDownload />
-                    <a href="/resume.png" download='resume'>Download Resume</a>
+                    <a href="/resume-nishat.pdf" target='_blank' download='resume'>Download Resume</a>
                 </div>
                 {/* <div className='  bg-black w-[1px]  h-[200px] mb-0'></div> */}
             </div>
 
             <div className='flex items-center'>
-                <div className=''>
+                <div className='md:mt-0 mt-3'>
                     <div className='flex gap-2 items-center'>
-                        <div className="divider bg-black w-20 h-[1px]"></div>
+                        <div className="divider md:bg-black bg-white w-10 md:w-20 h-[1px] md:block hidden"></div>
                         <p className='text-sm'>Connect with</p>
-                        <div className="divider bg-black w-20 h-[1px]"></div>
+                        <div className="divider md:bg-black bg-white w-10 md:w-20 h-[1px]"></div>
                     </div>
-                    <div className='flex gap-6 items-center uppercase  text-black '>
+                    <div className='flex md:gap-6 gap-5 items-center uppercase  md:text-black '>
                         <div className='flex items-center gap-1'>
-                            <img className='w-6 h-6 rounded-full shadow-md shadow-[#B8FDE6]' src={messenger} alt="" />
-                            <div className='font-extrabold text-sm'>
+                            <img className='md:w-6 md:h-6 w-9 h-9 rounded-full shadow-md shadow-[#B8FDE6] bg-white' src={messenger} alt="" />
+                            <div className='font-extrabold text-sm md:block hidden'>
                                 <Link to='https://m.me/100010105270770' target="_blank">Messenger</Link>
                                 {/* <p className='text-xs font-medium'>m.me</p> */}
                             </div>
                         </div>
                         <div className='flex items-center gap-1'>
-                            <img className='w-6 h-6 rounded-full shadow-md shadow-[#B8FDE6]' src={wp} alt="" />
-                            <div className='font-extrabold text-sm'>
+                            <img className='md:w-6 md:h-6 w-9 h-9 rounded-full shadow-md shadow-[#B8FDE6] bg-white' src={wp} alt="" />
+                            <div className='font-extrabold text-sm md:block hidden'>
                                 <Link to='https://m.me/100010105270770' target="_blank">What's app</Link>
                                 {/* <p className='text-xs font-medium'>+8801635617278</p> */}
                             </div>
                         </div>
                         <div className='flex items-center gap-1'>
-                            <img className='w-6 h-6 rounded-full shadow-md shadow-[#B8FDE6]' src={mail} alt="" />
-                            <div className='font-extrabold text-sm'>
+                            <img className='md:w-6 md:h-6 w-9 h-9 rounded-full shadow-md shadow-[#B8FDE6] bg-white' src={mail} alt="" />
+                            <div className='font-extrabold text-sm md:block hidden'>
                                 <Link to='https://m.me/100010105270770' target="_blank">Email</Link>
                                 {/* <p className='text-xs font-medium'>nishat.tabassum301@gmail.com</p> */}
                             </div>
