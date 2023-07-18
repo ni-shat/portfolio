@@ -26,7 +26,7 @@ const Skills = () => {
     //   }, []);
 
     return (
-        <div data-scroll id='Skills' className='h-fit transition-all duration-1000  border pb-20 w-full bg-[#121212] text-center text-emerald-400 font-semibold md:pt-14 pt-6 overflow-hidden'>
+        <div data-scroll id='Skills' className='h-fit transition-all duration-1000 md:border border-t md:pb-20 pb-5 w-full bg-[#121212] text-center text-emerald-400 font-semibold md:pt-14 pt-6 overflow-hidden  md:border-b-0 '>
             <div className='bg-[#121212] relative md:py-10 pt-8 pb-4 px-12 justify-center gap-4 flex'>
 
                 <div className='flex-grow flex flex-row md:flex-row justify-center gap-7 items-center md:justify-center md:gap-3.5'>
@@ -39,7 +39,7 @@ const Skills = () => {
 
             {/* mobile screen */}
             <div className='md:hidden block '>
-                <div data-aos="fade-right" data-aos-duration="1500" className='flex gap-9 mb-6 mx-auto justify-center py-3 '>
+                <div data-aos="fade-right" data-aos-duration="1500" className='flex gap-9 mb-6 mx-auto justify-center pt-3'>
                     <div className=''>
                         <div className='border rounded-full p-2  w-[75px] mb-0.5 h-[75px] flex justify-center items-center'>
                             <img className='w-14 h-14 rounded-full' src={html5} alt="" />
@@ -134,7 +134,7 @@ const Skills = () => {
 
             {/* large screen */}
             <div className='hidden md:block'>
-                <div data-aos="fade-right" data-aos-duration="1500" className=' md:flex gap-16 mb-6 mx-auto justify-center py-3 '>
+                <div data-aos="fade-right" data-aos-duration="1500" className=' md:flex gap-16 mb-6 mx-auto justify-center pt-3 '>
                     <div className=''>
                         <div className='border rounded-full p-2  w-[75px] mb-0.5 h-[75px] flex justify-center items-center'>
                             <img className='w-14 h-14 rounded-full' src={html5} alt="" />

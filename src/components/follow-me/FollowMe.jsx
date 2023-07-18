@@ -4,14 +4,14 @@ import li from '../../assets/linkedin-alt.svg'
 
 const FollowMe = () => {
     return (
-        <div className='absolute md:block md:left-auto md:top-auto md:bottom-4 md:right-3 top-[690px] left-1 w-full md:w-auto border-b md:border-b-0 pb-2 md:pb-0'>
+        <div className='absolute md:block md:left-auto md:top-auto md:bottom-4 md:right-3 top-[690px] left-1 w-[80%] md:w-auto border-b md:border-b-0 pb-2 md:pb-0'>
             {/* md:bottom-4 md:right-3 -bottom-64 */}
 
             <div className='flex md:flex-col md:gap-3 gap-1.5 md:items-center items-center relative'>
                 <div className='flex flex-col md:rotate-90'>
-                    <p className='text-white md:-top-3.5 md:right-0 left-[198px] top-[18px] opacity-60 absolute whitespace-nowrap md:block'>Follow me</p>
+                    <p className='text-white md:-top-3.5 md:right-0 md:left-auto md:bottom-auto left-[198px] top-[18px] opacity-60 absolute whitespace-nowrap'>Follow me</p>
                 </div>
-                <div className='  bg-white w-[1px]  h-[45px] md:block md:rotate-0 rotate-90 ml-5 mr-6 hidden'></div>
+                <div className='  bg-white w-[1px]  h-[45px] md:block md:rotate-0 rotate-90 ml-5 hidden'></div>
                 <div className='md:p-2 p-2 rounded-full border md:border flex items-center justify-center'>
                     <img className='md:w-6 md:h-6 w-5 h-5' src={fb} alt="" />
                 </div>

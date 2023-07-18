@@ -8,7 +8,7 @@ const Card = ({project}) => {
     const {project_title , description, live_site, client_site , server_site, type, image} = project;
 
     return (
-        <div className='w-[280px]  bg-gray-500 bg-opacity-10 text-start border-0 '>
+        <div className='md:w-[280px] w-full md:px-0 px-2.5 md:-mt-0 -mt-2.5  bg-gray-500 bg-opacity-10 text-start border-0 '>
             <div className=''>
                 <img className='w-full h-[260px] object-top object-cover hover:object-bottom transition-all duration-[1500ms]' src={image} alt="" />
             </div>
