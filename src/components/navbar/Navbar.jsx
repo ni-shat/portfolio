@@ -75,7 +75,7 @@ const Navbar = () => {
     return (
         <>
             {/* hi */}
-            <div className='h-16  bg-transparent flex'>
+            <div className='h-16  bg-transparent flex lg:hidden'>
                 <div className='w-[30.8%] bg-[#a8a9ab]'>
 
                 </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
                 
                 <ul tabIndex={0} className={`  flex-row transition-all duration-500  mx-auto flex justify-around   py-3 bg-[#121212] 
                  border-[0.5px]  text-black rounded-full
-                        `}> {/*  */}
+                        `}> 
                     {
                         navItems.map(item => <li key={item.id} className='nav_item'>
                             <Link

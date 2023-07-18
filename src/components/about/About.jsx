@@ -8,15 +8,14 @@ import Education from '../education/Education';
 
 const About = () => {
     return (
-        <div data-scroll id='About' className='h-auto pb-20 w-full text-[#9ea2a3] font-normal text-sm leading-6 bg-[#121212] md:pt-14 pt-[550px] border '>
+        <div data-scroll id='About' className='h-auto md:pb-20 pb-6  w-full text-[#9ea2a3] font-normal text-sm leading-6 bg-[#121212] md:pt-14 pt-[550px] md:border'>
             {/* #787C7D */}
             <div className='bg-[#121212] relative md:py-10 py-3 md:px-12 px-2.5 md:justify-center items-center gap-4 flex'>
-                <div className='flex-grow flex flex-col md:flex-row justify-center md:justify-center md:gap-3'>
+
+                <div className='flex-grow flex flex-col md:flex-row justify-center md:justify-center md:gap-3.5'>
                     <h3 className='md:text-5xl text-2xl font-extrabold pop md:text-center text-white w-fit uppercase md:mr-0 mr-2'>About Me</h3>
-                    {/* <div className=''> */}
                     <img className='mt-1 border-t-0 border-zinc-400 md:block hidden' src={icon} alt="" />
                     <img className='-mt-1 ml-3 border-t-0 border-zinc-400 block w-5 -rotate-90 md:hidden flex-grow' src={icon} alt="" />
-                    {/* </div> */}
                 </div>
 
                 
@@ -52,10 +51,10 @@ const About = () => {
                 </div>
             </div>
             <Education></Education>
-            <div className='flex gap-4 items-center justify-start mx-20 mt-4'>
-                <div className='w-fit h-fit shadow-[#B8FDE6] flex items-center px-5 bg-[#B8FDE6] border border-[#B8FDE6]  hover:cursor-pointer hover:bg-[#a8a9ab] transition-all duration-200'>
-                    <FaDownload className='text-black' />
-                    <button className=' uppercase text-sm font-extrabold rounded-ull py-2 ml-3 text-black whitespace-nowrap'><a href="/resume.png" download='resume'>Download Resume</a></button>
+            <div className='flex gap-4 items-center justify-start md:mx-20 mx-3 mt-4'>
+                <div className='w-fit h-fit shadow-[#B8FDE6] flex items-center md:px-5 px-2 bg-[#B8FDE6] border border-[#B8FDE6]  hover:cursor-pointer hover:bg-[#a8a9ab] transition-all duration-200'>
+                    <FaDownload className='text-black md:text-sm -mt-1' />
+                    <button className=' uppercase md:text-sm text-xs font-semibold md:font-extrabold rounded-ull md:py-2 py-1 md:ml-3 ml-2 text-black whitespace-nowrap'><a href="/resume.png" download='resume'><span className='md:inline-block hidden'>Download</span> Resume</a></button>
                 </div>
                 {/* <div className='w-32 h-32 border -z-10 bg-slate-100 rounded-full flex items-center justify-center'> */}
                 {/* <ReactCurvedText

@@ -32,7 +32,7 @@ const Home = () => {
 
 
     return (
-        <div data-scroll id='Home' className='relative -mt-28'>
+        <div data-scroll id='Home' className='relative -mt-28 md:-mt-0'>
             <div className='w-full h-auto'>
                 <div data-aos="fade-right" className='w-[30.8%] bg-[#a8a9ab] border-0 md:block md:h-screen h-60 '>
             
@@ -67,10 +67,10 @@ const Home = () => {
                         <div className='w-full flex items-end'>
                             {/* OLD started OF MERN PARA SECTION     OLD: min-[400px]:w-[350px]*/}
                             <div>
-                                <div className='md:ml-0 md:pl-[5px] min-[320px]:pl-2 md:mt-0 mt-0 relative 
+                                <div className='md:ml-0 md:pl-[5px] min-[320px]:px-2.5 md:mt-0 mt-0 relative 
                                     
                                     md:left-0 md:w-full
-                                    w-[91%] 
+                                    w-[100%] 
                                     '>
                                         
                                     <h2 className='text-emerald-500 font-bold text-xl uppercase  pop whitespace-nowrap'>

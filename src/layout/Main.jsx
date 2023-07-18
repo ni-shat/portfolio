@@ -16,8 +16,8 @@ const Main = () => {
             <Navbar></Navbar>
             <Home></Home>
             <About></About>
-            {/* <Skills></Skills>
-            <Projects></Projects>
+            <Skills></Skills>
+           {/* <Projects></Projects>
             <Contact></Contact>
             <Footer></Footer> */}
         </div>
